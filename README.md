@@ -1,5 +1,9 @@
 ## Verified to work in Release
+This project was derived from the elasticsearch-logstash-kibana project in [awesome-compose](https://github.com/docker/awesome-compose)
+
 In order to make this project work in Release, we had to truncate the example log file in logstash/nginx.log to less than 1Mb. This is a hard limit in downloading files via the Github API and configMaps in Kubernetes.
+
+To make this project run in [Release](https://releaseapp.io), simply create a new application with this repository.
 
 ## Compose sample application
 ### Elasticsearch, Logstash, and Kibana (ELK) in single-node
